@@ -1,0 +1,184 @@
+/* ==========================
+   GLOBAL VARIABLES
+   ========================== */
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #f1f1f1;
+  --accent-color: #ffc107;
+  --footer-background: #111;
+}
+
+/* ==========================
+   RESET & BASE STYLES
+   ========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+/* ==========================
+   HEADER & NAVIGATION
+   ========================== */
+.fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  color: var(--secondary-color);
+}
+
+.video-o {
+  text-align: center;
+  text-decoration: none;
+}
+
+.video-o h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.video-o span {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.video-overlay {
+  display: flex;
+  gap: 2rem;
+}
+
+.video-overlay .o {
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-overlay .o h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.video-overlay .o h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.4s ease;
+}
+
+.video-overlay .o:hover h3 {
+  color: var(--accent-color);
+}
+
+
+.video-o:hover h3 {
+  color: var(--accent-color);
+}
+
+.video-overlay .o:hover h3::after {
+  width: 100%;
+}
+.video-o:hover h3::after {
+  width: 100%;
+}
+
+/* ==========================
+   FOOTER
+   ========================== */
+.footer {
+  background-color: var(--footer-background);
+  color: #aaa;
+  padding: 5rem 8% 2rem;
+  margin-top: 5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3rem;
+}
+
+.footer-container h3,
+.footer-container h4 {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-container div:first-child h3 {
+  font-size: 2.5rem;
+}
+
+.footer-container div:first-child p {
+  font-size: 1rem;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-container p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.footer-btn {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: #ffda47;
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   UNIVERSAL LINK STYLES
+   ========================== */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+
+
+}
+
+

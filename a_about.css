@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about{
+  margin-top: 3rem;
+}
+/* Section container */
+.about,
+.Mission {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.about{
+  margin-top: 5rem;
+}
+
+/* Headings */
+.abouth2 {
+  color: #222;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.abouth1 {
+  color: orangered;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Images */
+.aboutimg{
+  width: 1000px;
+  max-width: 1000px;
+  height: 650px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+.Missionimg{
+    width: 550px;
+  max-width: 800px;
+  height: 550px;
+  border-radius: 8px;
+  margin: 18px auto;
+  /* display: block; */
+}
+/* About layout */
+.aboutMain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.aboutMain1,
+.aboutMain2 {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.aboutMain1 h3,
+.aboutMain2 h3 {
+  font-size: 20px;
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.hr {
+  border: none;
+  border-top: 3px solid orangered;
+  width: 60px;
+  margin: 20px 0;
+}
+
+/* Mission Section */
+.Mission {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.Mission1,
+.Mission2 {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .abouth1 {
+    font-size: 26px;
+  }
+  .abouth2 {
+    font-size: 20px;
+  }
+
+  .aboutMain,
+  .Mission {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutimg,
+  .Missionimg {
+    width: 80%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px auto;
+  }
+  .aboutMain1,
+  .aboutMain2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .abouth1 {
+    font-size: 22px;
+  }
+  .abouth2 {
+    font-size: 18px;
+  }
+  .p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .aboutimg,
+  .Missionimg {
+    width: 80%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px auto;
+  }
+}

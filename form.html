@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Success Form</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .form-container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* 🔙 Back button styling */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      background: #ff4500;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #ff6347;
+      transform: scale(1.05);
+    }
+
+    h1 {
+      color: #ff4500; /* Orange */
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: 1px solid #888;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 3px;
+    }
+
+    textarea {
+      grid-column: span 3;
+      min-height: 120px;
+    }
+
+    .address {
+      grid-column: span 2;
+    }
+
+    .linkedin {
+      grid-column: span 2;
+    }
+
+   .submit-btn {
+  grid-column: span 1;
+  background: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;   /* 🔹 smaller padding */
+  font-size: 12px;     /* 🔹 smaller font */
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+    .submit-btn:hover {
+      opacity: 0.9;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- 🔙 Back button -->
+  <a href="careers.html" class="back-btn">Back</a>
+
+  <div class="form-container">
+    <h1>Join the Success</h1>
+    <p>Please fill up the form below</p>
+
+    <form>
+      <div>
+        <label>First Name *</label>
+        <input type="text" required>
+      </div>
+
+      <div>
+        <label>Last Name *</label>
+        <input type="text" required>
+      </div>
+
+      <div>
+        <label>Email *</label>
+        <input type="email" required>
+      </div>
+
+      <div>
+        <label>Phone *</label>
+        <input type="tel" required>
+      </div>
+
+      <div class="address">
+        <label>Address *</label>
+        <input type="text" required>
+      </div>
+
+      <div>
+        <label>Position *</label>
+        <select required>
+          <option value="">Select</option>
+          <option>Frontend Developer</option>
+          <option>Backend Developer</option>
+          <option>Manager</option>
+        </select>
+      </div>
+
+      <div class="linkedin">
+        <label>LinkedIn Link *</label>
+        <input type="url" placeholder="Enter URL" required>
+      </div>
+
+      <div>
+        <label>Cover Letter *</label>
+        <textarea required></textarea>
+      </div>
+
+      <br>
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
